@@ -4,6 +4,12 @@ If your any reason you don want to link this project using 'react-native link', 
 include ':react-native-image-resizer'
 project(':react-native-image-resizer').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-resizer/android')
 ```
+
+and add following to the android/app/build.gradle dependencies section
+```
+implementation project(':react-native-image-resizer')
+```
+
 import it at the top of your `MainApplication.java` file
 ```
 import fr.bamlab.rnimageresizer.ImageResizerPackage;
