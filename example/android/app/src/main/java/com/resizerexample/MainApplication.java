@@ -29,6 +29,11 @@ public class MainApplication extends Application implements ReactApplication {
             new ImageResizerPackage()
       );
     }
+
+    @Override
+    protected String getJSMainModuleName() {
+      return "index";
+    }
   };
 
   @Override
